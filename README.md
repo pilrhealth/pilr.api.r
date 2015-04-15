@@ -4,6 +4,7 @@ pilr.api.r
 ## Overview
 
 An R package to simplify reading and writing data via the open PiLR API. This package contains two primary wrapper functions:  
+
 1) read_pilr _&larr; Given a PiLR project, dataset, and participant this function constucts an API endpoint, fetches the PiLR data in JSON format, and converts it to an R dataframe._  
 2) write_pilr _&larr; Given a PiLR project, dataset, participant, and a dataframe in your R session, this function constructs an API endpoint and writes the dataframe as a PiLR dataset which can then be managed via the PiLR web application._  
 
