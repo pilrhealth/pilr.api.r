@@ -1,9 +1,15 @@
 pilr.api.r
 ==============
 
-An R package to simplify reading and writing data through the open PiLR API.
+## Overview
 
-Installation
+An R package to simplify reading and writing data via the open PiLR API. This package contains two primary wrapper functions:  
+1) read_pilr _&larr; Given a PiLR project, dataset, and participant this function constucts an API endpoint, fetches the PiLR data in JSON format, and converts it to an R dataframe._  
+2) write_pilr _&larr; Given a PiLR project, dataset, participant, and a dataframe in your R session, this function constructs an API endpoint and writes the dataframe as a PiLR dataset which can then be managed via the PiLR web application._  
+
+To learn more about the PiLR API and it's integration with R, visit our [developer documentation wiki](https://github.com/pilrhealth/developer/wiki).
+
+## Installation
 
 First, if you don't already have the devtools package on your machine:
 
@@ -22,7 +28,7 @@ library(httr)
 library(jsonlite)
 ````
 
-Examples:
+## Examples
 
 First, let's set some options so we don't have to pass these to all
 the functions. Of course, it's always an option to pass these in if you would like. 
