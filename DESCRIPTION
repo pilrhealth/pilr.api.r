@@ -4,7 +4,7 @@ Description: The pilr.api.r package allows users to interact with PiLR Health
     servers through a friendly R interface. This is especially useful when
     writing your own Data Processing Units (DPUs) for your PiLR projects.
 Version: 0.1
-Authors: Erik Iverson (eiverson@meinergy.com), Tyler Schenk (tschenk@meinergy.com)
+Authors: Erik Iverson (eiverson@meinergy.net)
 Depends:
     R (>= 3.0.2)
 Imports:

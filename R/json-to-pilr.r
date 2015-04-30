@@ -3,7 +3,8 @@ json_to_pilr <- function(json_data, bad_metadata_ok = FALSE, type = "json") {
     if(type == "json") {
         if(class(json_data) == "response") {
             ep_data <- httr::content(json_data, as = "text")
-            df <- flatten(jsonlite:::fromJSON(ep_data))
+            if (ep_data == "\n[\n]") df <- data.frame()
+            else df <- flatten(jsonlite:::fromJSON(ep_data))
         } else {
             ep_data <- jsonlite::fromJSON(json_data,
                                           simplifyVector = FALSE,
