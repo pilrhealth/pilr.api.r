@@ -6,9 +6,9 @@ Description: The pilr.api.r package allows users to interact with PiLR Health
 Version: 0.1
 Authors: Erik Iverson (eiverson@meinergy.net)
 Depends:
-    R (>= 3.0.2)
-Imports:
+    R (>= 3.0.2),
     httr (>= 0.3),
     jsonlite (>= 0.9.7)
+Imports:
 License: # getOptions('devtools.desc.license')
 LazyData: true
