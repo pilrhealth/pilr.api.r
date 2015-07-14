@@ -12,7 +12,7 @@ To learn more about the PiLR API and it's integration with R, visit our [develop
 
 ## Installation
 
-First, if you don't already have the devtools package on your machine:
+First, if you don't already have the devtools package on your machine run the following on the R command line:
 
 ````r
 install.packages("devtools")
