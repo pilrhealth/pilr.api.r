@@ -50,11 +50,14 @@ options(pilr_default_access_code = "<your access code>")
 
 If you have some data streams setup already, try reading data from
 them using the read_pilr function. Just pass in the dataset code,
-schema version, and optional query params such as participant and period.
+schema version, and optional query params such as participant, period, or
+group (Note: To pull all enrolled participants, set group parameter = "template_assignments_enrolled").
 
 ````r
 df1 <- read_pilr(data_set = "pilrhealth:bmobile:activity", schema = "1", 
                  query_params = list(participant = "pt1"))
+df2 <- read_pilr(data_set = "pilrhealth:bmobile:activity", schema = "1", 
+                 query_params = list(group = "template_assignments_enrolled"))
 ````
 
 If you wish to pass the server/project/access code in directly, the 
