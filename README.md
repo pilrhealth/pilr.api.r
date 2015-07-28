@@ -29,7 +29,7 @@ library(httr)
 library(jsonlite)
 ````
 
-## Examples
+## read_pilr Examples
 
 First, let's set some options so we don't have to pass these to all
 the functions. Of course, it's always an option to pass these in if you would like. 
@@ -69,5 +69,6 @@ df2 <- read_pilr(data_set = "pilrhealth:bmobile:activity", schema = "1",
                  project = "a-eiverson-project", access_code = "<your access code>")
 ````
 
-## Notes
-- There is a cap of 10000 records that can be pulled with one API call. If you attempt to pull more than this, you will only recieve the first 10000.
+- NOTE: There is a cap of 10000 records that can be pulled with one API call. If you attempt to pull more than this, you will only recieve the first 10000.
+
+## write_pilr Examples
