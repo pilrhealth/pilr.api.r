@@ -36,4 +36,6 @@ read_pilr <- function(pilr_server, project, data_set, schema, access_code,
   if (nrow(ret) >= 10000) {
     message("You have received the maximum capacity of 10000 data records. More records may exist in this dataset but must be retrieved in multiple parts.")
   }
+  
+  ret
 }
