@@ -12,10 +12,12 @@ To learn more about the PiLR API and it's integration with R, visit our [develop
 
 ## Installation
 
-First, if you don't already have the devtools package on your machine run the following on the R command line:
+First, if you don't already have the devtools/httr/jsonlite packages on your machine run the following on the R commands:
 
 ````r
 install.packages("devtools")
+install.packages("httr")
+install.packages("jsonlite")
 ````
 
 Next install pilr.api.r using devtools, and load it to your session.
@@ -23,10 +25,10 @@ We will also load in the two package dependencies.
 
 ````r
 library(devtools)
-install_github("pilrhealth/pilr.api.r")
-library(pilr.api.r)
 library(httr)
 library(jsonlite)
+install_github("pilrhealth/pilr.api.r")
+library(pilr.api.r)
 ````
 
 ## read_pilr Examples
