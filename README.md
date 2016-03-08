@@ -60,15 +60,6 @@ df2 <- read_pilr(data_set = "pilrhealth:bmobile:activity", schema = "1",
                  query_params = list(group = "template_assignments_enrolled"))
 ````
 
-If you wish to pass the server/project/access code in directly, the 
-function call would include those arguments.
-
-````r
-df2 <- read_pilr(data_set = "pilrhealth:bmobile:activity", schema = "1", 
-                 query_params = list(participant = "pt1"), pilr_server = "a-eiverson-project",
-                 project = "a-eiverson-project", access_code = "<your access code>")
-````
-
 - NOTE: There is a cap of 10000 records that can be pulled with one API call. If you attempt to pull more than this, you will only recieve the first 10000.
 
 ## write_pilr Examples
