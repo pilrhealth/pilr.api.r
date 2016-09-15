@@ -64,4 +64,10 @@ df2 <- read_pilr(data_set = "pilrhealth:bmobile:activity", schema = "1",
 
 - NOTE: There is a cap of 10000 records that can be pulled with one API call. If you attempt to pull more than this, you will only recieve the first 10000.
 
-## write_pilr Examples
+## read_pilr_params Examples
+
+You can also pull all instrument settings and participant variables. After setting your options like above simply make a call such as:
+
+````r
+df_params <- read_pilr_params(participant = "101", instrument = "calrq", period = "active_period")
+````
