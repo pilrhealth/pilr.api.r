@@ -33,7 +33,7 @@ json_to_pilr <- function(json_data, bad_metadata_ok = FALSE, type = "json") {
   ## Remove data. and metadata. from colnames
   names(df) <- gsub("metadata.", "", names(df))
   names(df) <- gsub("data.", "", names(df))
-  
+  df <- as.data.frame(df)
   message("... complete!")
   df
 }
