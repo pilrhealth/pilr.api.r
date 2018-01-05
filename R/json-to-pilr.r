@@ -34,6 +34,8 @@ json_to_pilr <- function(json_data, bad_metadata_ok = FALSE, type = "json") {
   names(df) <- gsub("metadata.", "", names(df))
   names(df) <- gsub("data.", "", names(df))
   
+  # Some variables cannot be converted to a df
+  df <- tryCatch(as.data.frame(df), error=function(e) df)
   message("... complete!")
   df
 }
